@@ -1,0 +1,239 @@
+.profile-card-overlay {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  z-index: 998;
+}
+
+.profile-card {
+  position: fixed;
+  right: 20px;
+  top: 60px;
+  width: 280px;
+  background: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 300ms ease;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.profile-card.is-open {
+  transform: scale(1);
+}
+
+.profile-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-header-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.profile-photo {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 200ms ease;
+  margin-left: auto;
+}
+
+.close-btn:hover {
+  color: #111827;
+}
+
+.profile-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 0;
+  overflow: visible;
+}
+
+.profile-card-content.expanded {
+  max-height: 500px;
+}
+
+.profile-info {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.3;
+}
+
+.profile-post {
+  margin: 1px 0 0 0;
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.2;
+}
+
+.profile-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 6px 0;
+}
+
+.profile-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 200ms ease, color 200ms ease;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.profile-option:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.profile-option.logout-option {
+  color: #ef4444;
+}
+
+.profile-option.logout-option:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #f87171;
+}
+
+.settings-option-wrapper {
+  position: relative;
+}
+
+.settings-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 6px;
+  z-index: 1000;
+  animation: slideDown 200ms ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.settings-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 200ms ease;
+}
+
+.settings-close-btn:hover {
+  color: #111827;
+}
+
+.settings-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 0;
+}
+
+.reset-button {
+  background: #fee2e2;
+  color: #dc2626;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 200ms ease;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  animation: slideDown 300ms ease;
+}
+
+.reset-button:hover {
+  background: #fecaca;
+  color: #b91c1c;
+}
+
+.reset-button:active {
+  background: #fca5a5;
+}
+
+.settings-option {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    right: 12px;
+    top: 65px;
+    width: 260px;
+  }
+}

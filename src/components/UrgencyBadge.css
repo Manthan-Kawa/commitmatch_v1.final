@@ -1,0 +1,38 @@
+.urgency-badge {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  height: 20px;
+}
+
+/* P0 Critical — Rose */
+.urgency-badge.p0 {
+  background: #FFF1F2;
+  color:      #BE123C;
+  border:     1px solid #FDA4AF;
+}
+
+/* P1 High — Amber */
+.urgency-badge.p1 {
+  background: #FFFBEB;
+  color:      #B45309;
+  border:     1px solid #FCD34D;
+}
+
+/* P2 Medium — Yellow-warm */
+.urgency-badge.p2 {
+  background: #FEFCE8;
+  color:      #854D0E;
+  border:     1px solid #FDE047;
+}
+
+/* P3 Low — Blue-slate */
+.urgency-badge.p3 {
+  background: #EFF6FF;
+  color:      #1D4ED8;
+  border:     1px solid #BFDBFE;
+}

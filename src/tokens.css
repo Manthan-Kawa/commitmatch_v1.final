@@ -1,0 +1,70 @@
+:root {
+  /* PRIMARY — Indigo (trust, action) */
+  --color-primary:        #6366F1;
+  --color-primary-dark:   #4F46E5;
+  --color-primary-darker: #3730A3;
+  --color-primary-light:  #EEF2FF;
+  --color-primary-muted:  #C7D2FE;
+
+  /* SUCCESS — Emerald (resolved, available, positive) */
+  --color-success:        #10B981;
+  --color-success-dark:   #059669;
+  --color-success-light:  #ECFDF5;
+  --color-success-border: #6EE7B7;
+
+  /* WARNING — Amber (time pressure, escalation) */
+  --color-warning:        #F59E0B;
+  --color-warning-dark:   #D97706;
+  --color-warning-light:  #FFFBEB;
+  --color-warning-border: #FCD34D;
+
+  /* DANGER — Rose (critical, P0, errors) */
+  --color-danger:         #F43F5E;
+  --color-danger-dark:    #E11D48;
+  --color-danger-light:   #FFF1F2;
+  --color-danger-border:  #FDA4AF;
+
+  /* ACCENT — Violet (AI match score, smart features) */
+  --color-accent:         #8B5CF6;
+  --color-accent-dark:    #7C3AED;
+  --color-accent-light:   #F5F3FF;
+  --color-accent-muted:   #DDD6FE;
+
+  /* NEUTRALS — Slate (structure, text, surfaces) */
+  --bg-base:              #F1F5F9;  /* page background — cooler than gray */
+  --bg-surface:           #FFFFFF;
+  --bg-subtle:            #F8FAFC;
+  --bg-elevated:          #FFFFFF;
+
+  --border-default:       #E2E8F0;
+  --border-strong:        #CBD5E1;
+  --border-focus:         #6366F1;
+
+  --text-primary:         #0F172A;  /* slate-900 — richer than #111827 */
+  --text-secondary:       #334155;  /* slate-700 */
+  --text-muted:           #64748B;  /* slate-500 */
+  --text-disabled:        #94A3B8;  /* slate-400 */
+  --text-inverse:         #FFFFFF;
+
+  /* SIDEBAR — deep navy (authority, focus) */
+  --sidebar-bg:           #000b14;  /* darker blue */
+  --sidebar-hover:        
+  #051E3E;
+  --sidebar-active:       #0A2F5E;
+  --sidebar-accent:       #6366F1;
+  --sidebar-text:         #94A3B8;
+  --sidebar-text-active:  #F8FAFC;
+  --sidebar-border:       #0A2F5E;
+
+  /* Spacing Scale */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+}
